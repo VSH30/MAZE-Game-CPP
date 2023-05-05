@@ -31,7 +31,7 @@ void disp(){
     cout<<endl<<"~~~~~~~~~~~~~~~~~~~~~~~~~ VSH's MAZE ~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl<<endl;
     cout<<" W = Move UP || S = Move DOWN || A = Move LEFT || D = Move RIGHT"<<endl<<endl;
     for(int i=0;i<t;i++){
-        if(i!=0 && i%21 == 0) cout<<endl;
+        if(i!=0 && i%c == 0) cout<<endl;
         cout<<arr[i]<<" ";
     }
     cout<<endl<<endl<<head<<endl;
@@ -56,8 +56,8 @@ int main(){
     do{
         disp();
         switch(getch()){
-            case 'w':case 'W':   move(-21);  break;
-            case 's':case 'S':   move(21);   break;
+            case 'w':case 'W':   move(-c);  break;
+            case 's':case 'S':   move(c);   break;
             case 'd':case 'D':   move(1);    break;
             case 'a':case 'A':   move(-1);   break;
             default:    head = "---------------------- INVALID MOVE!!! -----------------------";    break;
