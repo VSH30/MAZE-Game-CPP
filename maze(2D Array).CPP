@@ -44,9 +44,9 @@ int game(){
 }
 
 void move(int x){
-    int row = (pos+x)/21, col = (pos+x)%21;
+    int row = (pos+x)/c, col = (pos+x)%c;
     if(arr[row][col] == ' '){
-        arr[pos/21][pos%21] = ' ';
+        arr[pos/c][pos%c] = ' ';
         arr[row][col] = 'O';
         pos += x;
         head = "----------------------- ALL GOOD!!!! -------------------------";
@@ -59,8 +59,8 @@ int main(){
     do{
         disp();
         switch(getch()){
-            case 'w':case 'W':   move(-21);  break;
-            case 's':case 'S':   move(21);   break;
+            case 'w':case 'W':   move(-c);  break;
+            case 's':case 'S':   move(c);   break;
             case 'd':case 'D':   move(1);    break;
             case 'a':case 'A':   move(-1);   break;
             default:    head = "---------------------- INVALID MOVE!!! -----------------------";    break;
