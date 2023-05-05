@@ -32,7 +32,7 @@ void disp(){
     cout<<" W = Move UP || S = Move DOWN || A = Move LEFT || D = Move RIGHT"<<endl<<endl;
     for(int i=0;i<t;i++){
         if(i!=0 && i%c == 0) cout<<endl;
-        cout<<arr[i]<<" ";
+        cout<<" "<<arr[i];
     }
     cout<<endl<<endl<<head<<endl;
 }
