@@ -3,7 +3,7 @@
 
 using namespace std;
 
-const int t=315, START=105, END=41;
+const int t=315, START=105, END=41, c=21;
 int pos=START;
 
 string head = "----------------------- ALL GOOD!!!! -------------------------";
